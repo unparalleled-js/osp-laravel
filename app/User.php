@@ -2,9 +2,8 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -28,11 +27,18 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function projects() {
+    public function projects()
+    {
         return $this->hasMany('App\Models\Project', 'owner_id');
     }
 
-    public function contributions() {
+    public function contributions()
+    {
         return $this->hasMany('App\Models\Contributor', 'user_id');
+    }
+
+    public function bookmarks()
+    {
+        return $this->hasMany('App\Models\Bookmark');
     }
 }

@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProjectMeta extends Model
+class ProjectLike extends Model
 {
-    protected $fillable = [
-        'project_id',
-        'likes',
-        'views',
-        'bookmarks',
-    ];
+    protected $fillable = ['user_id', 'project_id'];
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 
     public function project()
     {
