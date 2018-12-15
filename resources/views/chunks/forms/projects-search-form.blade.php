@@ -12,6 +12,7 @@
   {{-- end search input --}}
 
   {{-- selectors grid --}}
+  @include('chunks.selects.select-by-meta')
   {{-- end selectors grid --}}
 </div>
-{{-- end project searcch form
+{{-- end project searcch form --}}

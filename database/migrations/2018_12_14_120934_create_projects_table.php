@@ -17,6 +17,7 @@ class CreateProjectsTable extends Migration
             $table->increments('id');
             $table->integer('owner_id');
             $table->string('name');
+            $table->string('slug');
             $table->text('location')->nullable();
             $table->string('web_site')->nullable();
             $table->string('short_description')->nullable();
@@ -24,6 +25,7 @@ class CreateProjectsTable extends Migration
             $table->string('license_type')->default('free');
             $table->integer('category_id')->nullable();
             $table->text('tags');
+            $table->string('thumbnail');
             $table->timestamps();
         });
     }
