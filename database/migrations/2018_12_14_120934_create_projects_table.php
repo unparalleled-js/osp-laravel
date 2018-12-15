@@ -22,6 +22,7 @@ class CreateProjectsTable extends Migration
             $table->string('short_description')->nullable();
             $table->text('description');
             $table->string('license_type')->default('free');
+            $table->integer('category_id')->nullable();
             $table->text('tags');
             $table->timestamps();
         });

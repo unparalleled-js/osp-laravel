@@ -31,4 +31,9 @@ class Project extends Model
     {
         return $this->hasMany('App\Models\Vacancy', 'project_id');
     }
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\ProjectCategory', 'category_id');
+    }
 }
