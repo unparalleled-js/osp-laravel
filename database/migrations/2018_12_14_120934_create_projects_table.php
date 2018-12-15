@@ -21,6 +21,7 @@ class CreateProjectsTable extends Migration
             $table->text('location')->nullable();
             $table->string('web_site')->nullable();
             $table->string('short_description')->nullable();
+            $table->string('problem_solved');
             $table->text('description');
             $table->string('license_type')->default('free');
             $table->integer('category_id')->nullable();
