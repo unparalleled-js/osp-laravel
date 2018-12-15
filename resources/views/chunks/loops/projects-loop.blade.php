@@ -6,7 +6,10 @@
         thumbnail="{{$project->thumbnail}}"
         name="{{$project->name}}"
         short_description="{{$project->short_description}}"
-        is_bookmared="{{$project->}}"
+        is_bookmared="{{$project->bookmark === true}}"
+        likes="{{count($project->project_meta->likes)}}"
+        views="{{count($project->project_meta->views)}}"
+        bookmarks="{{count($project->bookmarks)}}"
       />
     </div>
   @endforeach

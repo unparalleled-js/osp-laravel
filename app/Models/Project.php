@@ -36,4 +36,13 @@ class Project extends Model
     {
         return $this->belongsTo('App\Models\ProjectCategory', 'category_id');
     }
+
+    public function bookmarks()
+    {
+        return $this->hasMany('App\Models\Bookmark', 'project_id');
+    }
+
+    public function project_meta() {
+        return $this->hasOne('App\Models\ProjectMeta', 'project_id');
+    }
 }

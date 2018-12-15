@@ -1,0 +1,18 @@
+[ ] App base functionality [0/2]
+  [ ] Users
+    [ ] Auth
+    [ ] Dashboard
+  [ ] Project [0/10]
+    [ ] Creation form
+    [ ] Loops
+    [ ] Main page
+    [ ] Sorter
+    [ ] Users dashboard
+    [ ] Contributors
+    [ ] Single page
+    [ ] Share
+    [ ] Update
+    [ ] Roadmap
+
+[ ] Styling
+[ ] Integrations
