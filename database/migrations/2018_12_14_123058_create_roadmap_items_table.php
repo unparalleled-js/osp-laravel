@@ -17,7 +17,7 @@ class CreateRoadmapItemsTable extends Migration
             $table->increments('id');
             $table->integer('project_id');
             $table->integer('position');
-            $table->boolean('is_currently_step')->default('false');
+            $table->boolean('is_currently_step')->default(false);
             $table->string('description');
             $table->integer('circle_size')->default(16); // available 16, 32
             $table->timestamps();
