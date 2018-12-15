@@ -10,6 +10,7 @@
       </div>
 
       <div class="project-preview-cart__wrapper__meta">
+        <!-- base meta -->
         <div class="base-meta">
           <div>
             <img src="img/likes.png" alt="">
@@ -24,6 +25,13 @@
             <div> {{bookmarks}} </div>
           </div>
         </div>
+        <!-- end base meta -->
+
+        <!-- bookmark it -->
+        <div class="bookmark-me">
+          <a @click="bookmarkProject(id)" href="#"><img src="" alt=""></a>
+        </div>
+        <!-- end bookmark it -->
       </div>
     </div>
   </div>
@@ -35,6 +43,7 @@ export default {
   name: 'ProjectPreviewCartComponent',
 
   props: [
+    'id',
     'thumbnail',
     'name',
     'slug'
@@ -53,7 +62,7 @@ export default {
 
   methods: {
     getProjectUrl(slug) {
-      return `/projects/`;
+      return `/projects/${slug}`;
     }
   }
 }
