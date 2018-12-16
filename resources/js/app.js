@@ -33,3 +33,8 @@ Vue.component('project-preview-cart', require('./components/ProjectPreviewCartCo
 const app = new Vue({
     el: '#app'
 });
+
+/**
+ * Require modals
+ */
+require('./scripts/modals');

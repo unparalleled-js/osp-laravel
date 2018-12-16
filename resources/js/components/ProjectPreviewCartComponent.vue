@@ -3,7 +3,7 @@
     <img :src="thumbnail" :alt="name">
     <div class="project-preview-cart__wrapper">
       <div class="project-preview-cart__wrapper__name"> 
-        <a :href="">{{name}}</a>
+        <a :href="getProjectUrl(slug)">{{name}}</a>
       </div>
       <div class="project-preview-cart__wrapper__short-description">
         {{short_description}}
@@ -46,7 +46,7 @@ export default {
     'id',
     'thumbnail',
     'name',
-    'slug'
+    'slug',
     'short_description',
     'is_bookmared',
     'likes',

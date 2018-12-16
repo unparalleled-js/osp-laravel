@@ -1,6 +1,6 @@
 [ ] App base functionality [0/2]
-  [ ] Users
-    [ ] Auth
+  [-] Users
+    [X] Auth
     [ ] Dashboard
   [ ] Project [0/10]
     [ ] Creation form

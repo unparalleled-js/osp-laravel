@@ -1,0 +1,8 @@
+.has-error {
+  input {
+    border-color: $error-red;
+  }
+  small {
+    color: $error-red;
+  }
+}

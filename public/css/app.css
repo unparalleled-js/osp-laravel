@@ -10466,6 +10466,14 @@ a.text-dark:focus {
   }
 }
 
+.has-error input {
+  border-color: #dc3545;
+}
+
+.has-error small {
+  color: #dc3545;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
